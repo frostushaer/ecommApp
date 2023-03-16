@@ -25,9 +25,8 @@ class ProductController extends GetxController {
     }
   }
 
-// TODO: index int hai but idhar wala variable obs se declare kiye hai jo ki same nai hai
   changeColorIndex(index) {
-    colorIndex = index;
+    colorIndex.value = index;
   }
 
   increaseQuantity(totalQuantity) {
@@ -43,7 +42,7 @@ class ProductController extends GetxController {
   }
 
   calculateTotalPrice(price) {
-    totalPrice = price * quantity.value;
+    totalPrice.value = price * quantity.value;
   }
 
   addToCart(

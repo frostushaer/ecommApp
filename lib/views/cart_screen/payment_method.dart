@@ -20,8 +20,8 @@ class PaymentMethods extends StatelessWidget {
           height: 60,
           child: controller.placingOrder.value
               ? Center(
-                  child: loadingIndicator(),
-                )
+                  child:
+                      loadingIndicator()) //TODO: cart screen jaane me kuch problem hai
               : ourButton(
                   onPress: () async {
                     await controller.placeMyOrder(

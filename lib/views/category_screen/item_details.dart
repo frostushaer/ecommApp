@@ -169,7 +169,6 @@ class ItemDetails extends StatelessWidget {
                                               horizontal: 4))
                                           .make()
                                           .onTap(() {
-                                        // TODO: index is integer but the function uses rxint which throws exception, handle this
                                         controller.changeColorIndex(index);
                                       }),
                                       Visibility(

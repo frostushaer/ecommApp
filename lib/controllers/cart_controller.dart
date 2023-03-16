@@ -36,7 +36,7 @@ class CartController extends GetxController {
     placingOrder(true);
     await getProductDetails();
     await firestore.collection(ordersCollection).doc().set({
-      'order_code': '123456789',
+      'order_code': '12345789',
       'order_date': FieldValue.serverTimestamp(),
       'order_by': currentUser!.uid,
       'order_by_name': Get.find<HomeController>().username,
