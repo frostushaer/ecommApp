@@ -11,7 +11,9 @@ const name = "Name";
 const nameHint = "Tushar Kumar";
 const forgetPass = "Forget Password?";
 const login = "Log in";
+const loggedin = "Logged in Successfully!";
 const logout = "Log out";
+const loggedout = "Logged out Successfully!";
 const signup = "Sign up";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
@@ -27,7 +29,7 @@ const searchAnything = "Search Anything...",
     topSellers = "Top Sellers",
     brand = "Brand",
     topCategory = "Top Categories",
-    womenDressing = "Women Dressing",
+    womenDressing = "Women Dress",
     girlsWatches = "Girls Watches",
     mobilePhone = "Mobile Phone",
     boysGlasses = "boys Glasses",
@@ -37,14 +39,14 @@ const searchAnything = "Search Anything...",
     featuredCategories = "Featured Categories";
 
 // category screen
-const womenClothing = "Women Clothing",
+const womenClothing = "Women Dress",
     menClothingFaishon = "Men Clothing & Faishon",
     compAccess = "Computer & Accessories",
     automobile = "Automobile",
     kidtoys = "kids & Toys",
     sports = "Sports",
     jewelery = "Jewelery",
-    cellphone = "Cellpjone & Tab",
+    cellphone = "Cellphone & Tab",
     furniture = "Furniture";
 
 const String addToCart = "Add To Cart";
@@ -58,4 +60,11 @@ const video = "Video",
     productYouMayLike = "Products you may like";
 
 // profile srings
-const wishlist = "My Wishlist", orders = "My Orders", messages = "My messages";
+const wishlist = "My Wishlist",
+    orders = "My Orders",
+    messages = "My messages",
+    oldpass = "Old password",
+    newpass = "New password";
+
+// payment methods strings
+const paypal = "Paypal", stripe = "Stripe", cod = "Cash on Delivery";

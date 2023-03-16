@@ -1,8 +1,26 @@
+import 'package:ecom_app/consts/weboptions.dart';
 import 'package:ecom_app/views/splash_screen/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
 import 'consts/consts.dart';
+import 'package:flutter/foundation.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (kIsWeb) {
+    //intialize the web
+    await Firebase.initializeApp(
+        options: FirebaseOptions(
+            apiKey: Weboptions.apiKey,
+            appId: Weboptions.appId,
+            messagingSenderId: Weboptions.messagingSenderId,
+            projectId: Weboptions.projectId));
+  } else {
+    // initialize for android and ios
+    await Firebase.initializeApp();
+  }
+
   runApp(const MyApp());
 }
 
